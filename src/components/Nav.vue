@@ -1,8 +1,8 @@
 <template lang="">
   <nav class="p-0 flex flex-col relative w-full z-40">
-    <div class="w-full bg-purple-900 min-h-16 flex items-between p-4 sticky" id="topbar">
+    <div class="w-full bg-purple-900 min-h-16 flex items-between p-4 sticky md:pl-24 md:pr-24 pr-2 pl-2" id="topbar">
         <section class="w-full h-auto flex items-center">
-            <h1 class="text-white font-bold sm:text-lg text-sm">Edge Hill Travel Info</h1>
+            <h1 class="text-white font-bold sm:text-lg text-sm">EHU Transport Info</h1>
         </section>
         <section class="items-center sm:flex hidden">
             <div @click="darkModeChange()" class="group">
@@ -26,7 +26,7 @@
         </section>
     </div>
   </nav>   
-    <div id="mobileNav" class="h-full w-full bg-black sm:hidden mobileNav absolute z-50" :class="{ mobileNavActive : mobileMenu}">
+    <div id="mobileNav" class="h-full w-full bg-darkerPurple sm:hidden mobileNav absolute z-50" :class="{ mobileNavActive : mobileMenu}">
 
     </div> 
 </template>
@@ -62,6 +62,6 @@ export default {
     }
 
     .mobileNavActive{
-        opacity: 80%;
+        opacity: 100%;
     }
 </style>

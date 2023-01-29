@@ -3,7 +3,11 @@ module.exports = {
   darkMode: 'class',
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "darkerPurple":"#411463"
+      }
+    },
   },
   plugins: [],
 }
