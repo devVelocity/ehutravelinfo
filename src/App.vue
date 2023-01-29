@@ -2,11 +2,13 @@
   <main class="h-full dark:bg-stone-900 bg-neutral-200 overflow-x-hidden">
     <Nav/>
     <router-view/>
+    <Footer/>
   </main>
 </template>
 
 <script>
 import Nav from '@/components/Nav.vue'
+import Footer from '@/components/Footer.vue'
 
 export default{
   data(){

@@ -1,11 +1,12 @@
 <template lang="">
   <nav class="p-0 flex flex-col relative w-full z-40">
-    <div class="w-full bg-purple-900 min-h-16 flex items-between p-4 sticky md:pl-24 md:pr-24 pr-2 pl-2" id="topbar">
+    <div class="w-full bg-purple-900 min-h-16 flex items-between p-4 sticky md:pl-32 md:pr-32 pr-2 pl-2" id="topbar">
         <section class="w-full h-auto flex items-center">
             <h1 class="text-white font-bold sm:text-lg text-sm">EHU Transport Info</h1>
         </section>
         <section class="items-center sm:flex hidden">
             <div @click="darkModeChange()" class="group">
+                <span class="bg-darkerPurple rounded-[50%] inline-block h-[40px] w-[40px] top-[11px] translate-x-[-5px] opacity-0 group-hover:opacity-40 hover:cursor-pointer absolute duration-100"></span>
                 <svg v-if="this.$root.darkMode" class="w-[30px] stroke-white stroke-[1px] opacity-50 group-hover:opacity-100 duration-100 group-hover:cursor-pointer" aria-hidden="true" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
@@ -16,6 +17,7 @@
         </section>
         <section class="sm:hidden flex">
             <div class="group" @click="mobileMenu = !mobileMenu">
+             <span class="bg-darkerPurple rounded-[50%] inline-block h-[40px] w-[40px] top-[11px] translate-x-[-5px] opacity-0 duration-100 group-hover:opacity-40 hover:cursor-pointer absolute"></span>
                 <svg v-if="!mobileMenu" xmlns="http://www.w3.org/2000/svg" class=" w-[30px] stroke-white stroke-[1px] opacity-50 group-hover:opacity-100 duration-100 group-hover:cursor-pointer" fill="none" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
